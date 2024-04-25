@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projeto SISCON v1</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Componente-Tabela-PJV.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
 </head>
@@ -30,49 +33,35 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Cadastro</h2>
-                    <h4>Seja bem vindo!</h4>
-                    <p class="w-lg-50">Digite seus dados para efetuar o cadastro.</p>
+                    <h2>Lista de Contatos</h2>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-6 col-xl-6" style="width: 800px;">
-                            <div class="card mb-5">
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <form class="text-start" method="post" style="width: 100%;">
-                                        <div class="mb-3"><label class="form-label">Nome:</label><input class="form-control" type="text" placeholder="Nome"></div>
-                                        <div class="mb-3"><label class="form-label">Sobrenome:</label><input class="form-control" type="text" placeholder="Sobrenome"></div><label class="form-label">Estado</label><select class="form-select" style="margin: 0px 0px 10px;">
-                                            <optgroup label="Estado">
-                                                <option value="12" selected="">Ceará</option>
-                                                <option value="13">Bahia</option>
-                                                <option value="14">São Paulo</option>
-                                            </optgroup>
-                                        </select><label class="form-label">Cidade</label><select class="form-select" style="margin: 0px 0px 10px;">
-                                            <optgroup label="Cidade">
-                                                <option value="12" selected="">Santana do Acaraú</option>
-                                                <option value="13">Massapê</option>
-                                                <option value="14">Sobral</option>
-                                            </optgroup>
-                                        </select>
-                                        <div class="mb-3"></div><label class="form-label">Data de nascimento</label><input class="form-control" type="date">
-                                        <div class="mb-3"><label class="form-label">Sexo</label><select class="form-select">
-                                                <optgroup label="Selecione o sexo">
-                                                    <option value="13" selected="">Masculino</option>
-                                                    <option value="13">Feminino</option>
-                                                    <option value="13">Outros</option>
-                                                </optgroup>
-                                            </select></div>
-                                        <div class="mb-3"><label class="form-label">Nome de usuário:</label><input class="form-control" type="text" placeholder="Nome de usuário"></div>
-                                        <div class="mb-3"><label class="form-label">E-mail:</label><input class="form-control" type="text" placeholder="Seu e-mail"></div>
-                                        <div class="mb-3"><label class="form-label">Fone:</label><input class="form-control" type="text" placeholder="(XX) 9.88888888"></div>
-                                        <div class="mb-3"><label class="form-label">Senha:</label><input class="form-control" type="text" placeholder="Senha realmente forte"><input class="form-control" type="text" placeholder="Confirmação de senha"></div>
-                                        <div class="text-center mb-3" style="width: 100%;"><input class="btn btn-primary" type="submit" style="width: 130px;" value="Cadastrar" /></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="table-responsive table table-hover table-bordered results">
+                        <table class="table table-hover table-bordered">
+                            <thead class="bill-header cs">
+                                <tr>
+                                    <th id="trs-hd-1" class="col-lg-1">ID</th>
+                                    <th id="trs-hd-2" class="col-lg-2">Nome</th>
+                                    <th id="trs-hd-3" class="col-lg-3">E-mail</th>
+                                    <th id="trs-hd-6" class="col-lg-2">Telefone</th>
+                                    <th id="trs-hd-4" class="col-lg-2">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="warning no-result">
+                                    <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">01</td>
+                                    <td style="text-align: center;">José Vidal</td>
+                                    <td style="text-align: center;">profjvidal@gmail.com</td>
+                                    <td style="text-align: center;">(88) 9.88888888</td>
+                                    <td class="text-center"><a href="cadastro.html"><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="far fa-edit" style="font-size: 15px;"></i></button></a><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

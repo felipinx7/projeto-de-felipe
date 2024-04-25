@@ -1,0 +1,23 @@
+.bill-header {
+  font-size: 12px;
+  text-align: center;
+}
+
+.bill-header.cs {
+  background-color: rgba(37,71,106,0.56);
+  color: #fff;
+}
+
+.results tr[visible='false'], .no-result {
+  display: none;
+}
+
+.fa.fa-warning {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.warning.no-result {
+  text-align: center;
+}
+
